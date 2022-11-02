@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalActivity"
+    android:background="@drawable/blue_bg123">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/aclonica"
+        android:text="Home Care"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <ImageView
+        android:layout_width="203dp"
+        android:layout_height="157dp"
+
+        android:src="@drawable/homecare"
+
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:padding="10dp"
+        android:text="Submit"
+        android:onClick="sub"
+        android:textAllCaps="false"
+        android:textColor="#1674E6"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email4"
+        app:layout_constraintVertical_bias="0.937"
+        app:layout_constraintWidth_percent=".4" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Choose your service"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:hint="  Phone Number"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.081"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/email3"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_location"
+        android:hint="  Address"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email2"
+        app:layout_constraintVertical_bias="0.066"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/email4"
+        android:layout_width="334dp"
+        android:layout_height="130dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_description_24"
+        android:hint="  Description"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email3"
+        app:layout_constraintVertical_bias="0.161"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="382dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
