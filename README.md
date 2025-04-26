@@ -1,88 +1,91 @@
+
 # E-Pharmacy Android App
 
-## Overview
-This Android application provides healthcare services with a focus on elderly care and hospital services. The app features user authentication, product categories, and detailed information about medical services.
+This is a mobile application built with **Android Studio** (Java) that provides a user-friendly platform for browsing and purchasing pharmacy products online.  
+It also includes additional healthcare services for the elderly and hospitals.
 
 ## Features
-- User authentication (Login/Registration)
-- Onboarding experience for new users
-- Home screen with categorized medical products
-- Elderly care services
-- Hospital services
-- Product details with descriptions
-- Shopping cart functionality
+
+- 📱 User Authentication (Login, Registration)
+- 🏠 Home Page with banners and product categories
+- 🛒 View New Products, Popular Products
+- 🏥 Special sections for Elderly Care and Hospital Services
+- 🔥 Animations for screen transitions
+- 🌎 Firebase integration for authentication and data storage
+
+## Tech Stack
+
+- **Frontend:** Android (Java)
+- **Backend:** Firebase
+- **Libraries/Tools:** 
+  - Firebase Authentication
+  - Firebase Realtime Database / Firestore (if used)
+  - Glide (optional for images)
+  - Android ViewPager
+  - Material Design Components
+- **Build System:** Gradle
 
 ## Project Structure
-The application follows a standard Android project structure with activities, fragments, adapters, and models:
 
-### Activities
-- `LoginActivity`: Handles user authentication
-- `RegistrationActivity`: Manages new user registration
-- `MainActivity`: Main application interface
-- `OnBoardingActivity`: Provides introduction for first-time users
-- `DetailedActivity`: Shows detailed product/service information
-- `ElderlyActivity`: Specialized services for elderly care
-- `HospitalActivity`: Hospital-related services
-
-### Fragments
-- `HomeFragment`: Main dashboard displaying product categories and offers
-
-### Adapters
-- `CategoryAdapter`: Displays product categories
-- `NewProductsAdapter`: Shows newly added products
-- `PopularProductsAdapter`: Displays popular products
-- `SliderAdapter`: Manages banner/promotional slides
-
-### Models
-- `CategoryModel`: Data structure for product categories
-- `NewProductModel`: Data structure for new products
-- `PopularProductsModel`: Data structure for popular products
-
-## Getting Started
-
-### Prerequisites
-- Android Studio Arctic Fox (2020.3.1) or newer
-- JDK 11 or above
-- Android SDK 30 or above
-- Gradle 7.0.2 or newer
-
-### Installation
-1. Clone the repository:
-```bash
- git clone https://github.com/yourusername/healthcare-app.git
 ```
-2. 2. Open the project in Android Studio
-3. Sync Gradle files
-4. Run the application on an emulator or physical device
+.idea/
+app/
+ ├── src/
+ │    ├── main/
+ │    │    ├── java/com/example/sev2/
+ │    │    │    ├── activities/
+ │    │    │    ├── adapters/
+ │    │    │    ├── fragments/
+ │    │    │    ├── models/
+ │    │    ├── res/
+ │    │    └── AndroidManifest.xml
+ │    ├── test/
+ │    └── androidTest/
+ ├── build.gradle
+ ├── google-services.json
+gradle/
+ └── wrapper/
+build.gradle
+gradlew / gradlew.bat
+local.properties
+settings.gradle
+README.md
+```
 
-## Technology Stack
-- Java for Android development
-- XML for layouts
-- Firebase for backend services (authentication and database)
+## How to Run
 
-## Development Roadmap
-- [ ] Implement appointment scheduling
-- [ ] Add medication reminders
-- [ ] Integrate payment gateway
-- [ ] Add multilingual support
-- [ ] Implement chat support for medical consultations
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/your-username/e-pharmacy-app.git
+   ```
 
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. **Open the project in Android Studio.**
+
+3. **Set up Firebase:**
+   - Create a Firebase project.
+   - Add an Android app to the Firebase project.
+   - Download the `google-services.json` file and place it inside the `app/` directory.
+   - Enable **Authentication** (Email/Password).
+   - Set up **Firestore** or **Realtime Database** if necessary.
+
+4. **Build and Run** the project on an emulator or physical device.
+
+
+## Folder Highlights
+
+- `activities/` — Core screens like Login, Registration, FrontPage, Hospital services, Elderly Care.
+- `adapters/` — RecyclerView adapters for categories and products.
+- `models/` — Data models for categories and products.
+- `layout/` — XML layouts for screens and components.
+- `drawable/` — Images, icons, and graphical assets.
+
+## Future Enhancements
+
+- 🛒 Implement full checkout and payment gateway
+- 📦 Add order tracking and status updates
+- 🛠️ Push notifications for order status and promotions
+- 🎯 Update to Material 3 design guidelines
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contact
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/healthcare-app](https://github.com/yourusername/healthcare-app)
-
-## Acknowledgements
-- [Android Jetpack](https://developer.android.com/jetpack)
-- [Material Design Components](https://material.io/develop/android)
-- [Firebase](https://firebase.google.com/)
+This project is licensed under the [MIT License](LICENSE).
